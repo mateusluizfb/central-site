@@ -18,6 +18,10 @@ gem "minima"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages"
 
+require 'rack/jekyll'
+run Rack::Jekyll.new
+
+
 # If you have any plugins, put them here!
 # group :jekyll_plugins do
 #   gem "jekyll-github-metadata", "~> 1.0"
